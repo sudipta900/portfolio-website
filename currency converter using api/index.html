@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currenct converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     <!-- Floating Stars -->
+    <div class="stars-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-circle">B</div>
+                <span>I'm Sudipta</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About me</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects" class="active">Projects</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="resume.html" >Resume</a>
+            </div>
+            <div class="nav-right-group">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sudip.ta_maiti?igsh=MWVrOXRhanRmNTl3dg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="https://www.facebook.com/singer.bm.1" target="_blank"><i class="fab fa-facebook"></i></a> -->
+                    <a href="https://x.com/Sudiptamaiti15" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sudipta-maiti-4153b2229" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/sudipta900?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu(event)">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" onclick="toggleMobileMenu()">✖</button>
+        <div class="mobile-nav-links">
+            <a href="index.html" onclick="toggleMobileMenu()">Home</a>
+            <a href="about.html" onclick="toggleMobileMenu()">About me</a>
+            <a href="index.html#skills" onclick="toggleMobileMenu()">Skills</a>
+            <a href="index.html#projects" onclick="toggleMobileMenu()">Projects</a>
+            <a href="mailto:sudiptamaiti97@gmail.com?subject=Message from Portfolio Website" onclick="toggleMobileMenu()">Contact</a>
+            <a href="resume.html" class="active" onclick="toggleMobileMenu()">Resume</a>
+        </div>
+        <div class="mobile-social-links">
+            <a href="https://www.instagram.com/sudip.ta_maiti?igsh=MWVrOXRhanRmNTl3dg==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="https://www.facebook.com/singer.bm.1" target="_blank"><i class="fab fa-facebook"></i></a> -->
+            <a href="https://x.com/Sudiptamaiti15" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/sudipta-maiti-4153b2229" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sudipta900?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Currency converter</h2>
+        <form action="">
+            <p>Enter amount</p>
+            <input type="number"  placeholder="100" class="amount">
+            <div class="dropDown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="selectContainer">
+                        <img src="https://flagsapi.com/US/shiny/64.png">
+                        <select name="from" id="selectContainer1" class="Select">
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="selectContainer">
+                        <img src="https://flagsapi.com/IN/shiny/64.png">
+                        <select name="to" id="selectContainer2">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg"></div>
+            <button>Get exchange rate</button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

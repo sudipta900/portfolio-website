@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "portfolio website",
+			"path": "."
+		},
+		{
+			"name": "calculatorApp",
+			"path": "../../java Script/calculatorApp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio website"
+	}
+}
